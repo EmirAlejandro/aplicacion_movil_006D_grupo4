@@ -1,0 +1,33 @@
+.fondo {
+    --background: url('./../../../../assets/img/FondoApp.png') 0/100% 100%;
+  }
+
+
+  .fondo ion-title {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .fondo h4 {
+    text-align: center;
+    margin-top: 45%;
+  }
+
+
+  .logo{
+    margin: auto;
+    width: 80%;
+    height: 175px;
+    background: url('./../../../../assets/img/map.PNG') 0/175%;
+    border: solid 2px black;
+}
+
+.ionBtn{
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 20%;
+    color: rgb(255, 255, 255);
+}

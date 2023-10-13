@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="espacio"></div>
+  <div class="logo"></div>
+  <p class="texto">Inicie sesión para continuar</p>
+  <ion-list style="background-color: transparent">
+    <ion-item color="medium" class="ionItemm">
+      <ion-input label="Nombre"  labelPlacement="stacked" placeholder="" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item color="medium" class="ionItemm">
+      <ion-input label="Contraseña" labelPlacement="stacked" type="password" placeholder=""
+        [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button color="danger" class="ionBtn" expand="block" (click)="menu()">INICIAR SESION</ion-button>
+  <p class="texto2">¿Olvidaste tu contraseña?</p>
+  <ion-button color="danger" class="ionBtn" expand="block" fill="outline" (click)="clave()">
+    Actualizar clave
+    <ion-icon name="person-add-outline" style="margin-left: 2%;"></ion-icon>
+  </ion-button>
+
+  <p class="txt">¿No tienes cuenta?</p>
+
+  <ion-button color="danger" class="ionBtn" expand="block" fill="outline" (click)="reg()">
+    REGISTRATE
+    <ion-icon name="person-add-outline" style="margin-left: 2%;"></ion-icon>
+  </ion-button>
+
+</ion-content>

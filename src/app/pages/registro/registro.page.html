@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="espacio"></div>
+
+
+  <H1  class="texto" >REGISTRAR CUENTA</H1>
+  <ion-list style="background-color: transparent">
+    <ion-item color="medium" class="ionItemm">
+      <ion-input label="Nombre" labelPlacement="stacked" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item color="medium" class="ionItemm">
+      <ion-input label="Correo" labelPlacement="stacked" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item color="medium" class="ionItemm">
+      <ion-input label="Contraseña" labelPlacement="stacked" type="password" placeholder=""></ion-input>
+    </ion-item>
+
+    <div class="contenedor" color="medium">
+      <ion-toggle class="texto2" alignment="start" color="danger" [enableOnOffLabels]="true">Registrar automóvil</ion-toggle>
+    </div>
+
+  </ion-list>
+  <ion-button color="danger"  class="ionBtn" expand="block" (click)="menu()">Registrarse</ion-button>
+
+
+
+  <ion-button color="danger"  class="ionBtn" expand="block" fill="outline" (click)="home()">Registrar auto</ion-button>
+
+
+</ion-content>
