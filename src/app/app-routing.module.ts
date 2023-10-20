@@ -37,6 +37,10 @@ const routes: Routes = [
     path: 'clave',
     loadChildren: () => import('./pages/clave/clave.module').then( m => m.ClavePageModule)
   },
+  {
+    path: 'hola',
+    loadChildren: () => import('./pages/hola/hola.module').then( m => m.HolaPageModule)
+  },
 
 ];
 

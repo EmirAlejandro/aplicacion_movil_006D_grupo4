@@ -10,7 +10,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Importa los módulos de formularios
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SharedDataService } from './shared-data.service'; 
+import { SharedDataService } from './shared-data.service';
+
+// librerias
+import { AngularFireModule} from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +24,7 @@ import { SharedDataService } from './shared-data.service';
     BrowserAnimationsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     FormsModule, // Agrega FormsModule
     ReactiveFormsModule, // Agrega ReactiveFormsModule
   ],
@@ -28,4 +34,4 @@ import { SharedDataService } from './shared-data.service';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
